@@ -49,8 +49,10 @@ function sortearAmigo() {
     nombresYaElegidos.push(nombreDeAmigosSecretos[nombreGenerado])
     nombreDeAmigosSecretos.splice(nombreGenerado, 1)
 
-};
+     mostrarNombresYaElegidos()
 
+};
+    
 function mostrarNombresYaElegidos() {
     listaDeNombres = document.getElementById('nombresSorteados');
     listaDeNombres.innerHTML = ''
@@ -60,5 +62,3 @@ function mostrarNombresYaElegidos() {
         listaDeNombres.innerHTML += "<li>" + nombresYaElegidos[i] + "</li>"
         };
 }
-mostrarNombresYaElegidos()
-    
