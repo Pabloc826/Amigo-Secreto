@@ -45,5 +45,9 @@ function sortearAmigo() {
     let amigoSecreto = document.querySelector('#resultado');
     amigoSecreto.innerHTML = `Tu amigo secreto es ${nombreDeAmigosSecretos[nombreGenerado]}`
 
+    let nombreSorteado = nombreDeAmigosSecretos[nombreGenerado]
+    nombresYaElegidos.push(nombreDeAmigosSecretos[nombreGenerado])
+    nombreDeAmigosSecretos.splice(nombreGenerado, 1)
+
 };
     
