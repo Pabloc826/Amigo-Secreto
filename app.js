@@ -61,4 +61,4 @@ function mostrarNombresYaElegidos() {
     for(let i = 0; i<nombresYaElegidos.length; i++) {
         listaDeNombres.innerHTML += "<li>" + nombresYaElegidos[i] + "</li>"
         };
-}
+};
