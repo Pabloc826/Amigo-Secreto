@@ -50,4 +50,15 @@ function sortearAmigo() {
     nombreDeAmigosSecretos.splice(nombreGenerado, 1)
 
 };
+
+function mostrarNombresYaElegidos() {
+    listaDeNombres = document.getElementById('nombresSorteados');
+    listaDeNombres.innerHTML = ''
+    listaDeNombres.innerHTML += '<li>' + 'Nombres sorteados' + '</li>'
+
+    for(let i = 0; i<nombresYaElegidos.length; i++) {
+        listaDeNombres.innerHTML += "<li>" + nombresYaElegidos[i] + "</li>"
+        };
+}
+mostrarNombresYaElegidos()
     
