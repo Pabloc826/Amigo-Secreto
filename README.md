@@ -19,7 +19,9 @@ Descripción sobre lo hecho:
 
 - La función ```sortearAmigo``` contiene la última conexión de JavaScript a HTML. Esta función hace que, a travez de ```Math.floor(Math.random()*nombreDeAmigosSecretos.length)``` salga un nombre del array de forma al azar. A su vez, si el array esta vacío y el usuario clickea "sortear amigo" le aparecerá un ```alert``` que da a entender que no hay amigos para sortear.
 
-✅ COSAS A AGREGAR
+✅ COSAS A AGREGADAS
 - Una función que muestre los nombres ya sorteados.
 - Buscar la forma para que cuando se sorteen todos los nombres salga un alert de que ya no hay nombres para sortear.
+
+📌 COSAS PARA AGREGAR
 - Agregar un botón de "Nuevo juego" que limpie todo y puedas empezar nuevamente.
