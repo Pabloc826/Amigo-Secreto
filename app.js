@@ -19,6 +19,17 @@ function agregarAmigo(){
     console.log(nombreDeAmigosSecretos);
 };
 
+function usarTeclaEnter(){
+let inputAmigo = document.getElementById('amigo');
+
+inputAmigo.addEventListener ('keydown', function(event){
+    if (event.key === "Enter"){
+        agregarAmigo()
+    }
+})
+}
+usarTeclaEnter()
+
 function limpiarCaja() {
     document.getElementById('amigo'). value = '';
 };
@@ -62,3 +73,12 @@ function mostrarNombresYaElegidos() {
         listaDeNombres.innerHTML += "<li>" + nombresYaElegidos[i] + "</li>"
         };
 };
+
+function nuevoJuego(){
+    nombreDeAmigosSecretos = [];
+    nombresYaElegidos = []
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('nombresSorteados').innerHTML = '';
+    document.getElementById('resultado').innerHTML = '';
+    document.getElementById('amigo').focus();
+}
